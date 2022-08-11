@@ -1,15 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>portfolio</title>
 </head>
 
 <body>
-    <h1>ce portfolio sera mis à jour, bientôt.</h1>
+    <div class="portfolio">
+        <div class="div_fixe">
+            <!-- menu -->
+            <nav class="menu">
+                <!-- header du menu  -->
+                <div class="header_menu">
+                    <div class="photo_profil">
+                        <img src="assets/images/img/jb.png" alt="">
+                        <!-- photo de waly le dev ici  -->
+                    </div>
+                    <!-- nom et prenom  -->
+                    <div class="name_user">
+                        <p class="name">Mintsa Jean-Bosco</p>
+                        <p class="prof">Developpeur web</p>
+                    </div>
+                </div>
+                <!-- fin du header menu -->
+                <!-- corp du menu  -->
+                <div class="main_menu">
+                    <ul class="liste">
+                        <li class="l1"><a href="#about">A propos de moi</a></li>
+                        <li class="l2"><a href="#">Mes competances</a></li>
+                        <li class="l3"><a href="#">Mes realisation</a></li>
+                        <li class="l4"><a href="#">Me contacter</a></li>
+                    </ul>
+                    <p class="para_titre">Mes cordonees</p>
+                    <ul class="cordonne">
+                        <li>Nom : Mintsa Mi Nguema</li>
+                        <li>Prenom : Jean-bosco</li>
+                        <li>Date de naissance : 09 fev. 2000.</li>
+                        <li>Nationalite : Gabonaise</li>
+                        <li>Numero de tel. : +241 74937621</li>
+                        <li>Email : walyguema@gmail.com</li>
+                    </ul>
+                </div>
+                <!-- fin corp du menu  -->
+            </nav>
+            <!-- fin du menu  -->
+        </div>
+        <main class="corp">
+            <!-- header  -->
+            <header class="en_tete">
+                <!-- div de l'images de fond transparent  -->
+                <div class="img_trans">
+                    <canvas id="canvas" width="800" height="600"></canvas>
+                </div>
+                <!-- fin transparent div -->
+                <!-- div qui contient les texte et le canvas d'animation du sprite -->
+                <div class="titre_page">
+                    <!-- div pour texte -->
+                    <div class="texte_header">
+                        <p class="hello">Hello World ! Je suis Jean-Bosco</p>
+                        <h1>Developpeur<br>Web</h1>
+                        <h2>FULL SATCK</h2>
+                    </div>
+                    <!-- fin div texte -->
+                    <!-- div qui contien le canvas -->
+                    <div class="anime_sprite">
+                        <div class="photos_user">
+                            <img src="assets/images/img/jb.png" alt="Jean-Bosco">
+                        </div>
+                    </div>
+                    <!-- fin contener canvas -->
+                </div>
+                <!-- fin div contener texte et canvas -->
+            </header>
+            <!-- fin du header  -->
+            <div class="main">
+                <section id="about">
+                    <h2>A propos</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non minima voluptatum totam doloribus
+                        distinctio? Consectetur accusantium beatae, nulla rerum ea et veniam explicabo voluptates enim
+                        quidem maiores voluptatibus deleniti ullam!
+                    </p>
+                </section>
+                <section id="skills">
+                    <h2>Mes competances</h2>
+                    <div class="cartes_competances">
+                        <div class="competance">
+                            <div class="img_comp">
+                                <div class="img_lang"></div>
+                            </div>
+                            <ul class="main_comp">
+                                <li class="titre_comp">Freemwork</li>
+                                <li class="com"><span class="icone i1"></span> Boostrap</li>
+                                <li class="com"><span class="icone i2"></span> sass</li>
+                                <li class="titre_comp">Freemwork</li>
+                                <li class="com"><span class="icone i1"></span> Boostrap</li>
+                                <li class="com"><span class="icone i2"></span> sass</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
