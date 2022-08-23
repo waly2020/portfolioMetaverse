@@ -15,12 +15,6 @@ let paras = document.querySelectorAll(".para_skill");
     })
 })();
 
-// back_skill.forEach(back => {
-
-//     console.log((back));
-//     // paras[back_skill.indexOf(back)].textContent = `${back.getAttribute('data-height')}%`;
-// });
-
 for (let i = 0; i < back_skill.length; i++) {
     let back = back_skill[i];
     back.style.height = `${back.getAttribute('data-height')}%`;
