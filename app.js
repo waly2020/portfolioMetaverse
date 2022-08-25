@@ -1,5 +1,5 @@
 let back_skill = document.querySelectorAll(".back_skill");
-let paras = document.querySelectorAll(".para_skill");
+let paras = document.querySelectorAll(".skills1 .para_skill");
 
 (function () {
     [...document.querySelectorAll(".control")].forEach(button => {
@@ -17,6 +17,8 @@ let paras = document.querySelectorAll(".para_skill");
 
 for (let i = 0; i < back_skill.length; i++) {
     let back = back_skill[i];
+    if (i < paras.length) {
+        paras[i].textContent = `${back.getAttribute('data-height')}%`;
+    }
     back.style.height = `${back.getAttribute('data-height')}%`;
-    paras[i].textContent = `${back.getAttribute('data-height')}%`;
 }
