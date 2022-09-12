@@ -13,9 +13,9 @@ let text_content = document.querySelectorAll(".projet-detail");
             document.getElementById(button.dataset.id).classList.add("active");
         })
     });
-    document.querySelector(".theme-btn").addEventListener("click", () => {
-        document.body.classList.toggle("light-mode");
-    })
+    // document.querySelector(".theme-btn").addEventListener("click", () => {
+    //     document.body.classList.toggle("light-mode");
+    // })
 })();
 
 for (let i = 0; i < back_skill.length; i++) {
