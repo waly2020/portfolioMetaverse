@@ -419,6 +419,10 @@ section {
   transform: translateX(-50%);
   height: 100%;
 }
+.portfolios .projet-content .projet-img .big {
+  width: 100%;
+  height: auto;
+}
 .portfolios .projet-content .projet-detail {
   background: #191d2b;
   padding: 8px;
